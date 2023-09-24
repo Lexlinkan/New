@@ -1,0 +1,281 @@
+body {
+    background-color: #100720;
+}
+
+.content {
+    background-color: #100720;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'BioRhyme', sans-serif;
+}
+
+.password-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 350px;
+    height: 50px;
+    background-color: #2D033B;
+    padding: 20px;
+    font-size: large;
+}
+
+.copy-icon {
+    cursor: pointer;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: #2D033B;
+    flex-direction: column;
+    flex-basis: 400px;
+    /* height: 540px; */
+    padding: 5px 20px;
+    margin: 20px;
+    min-height: 300px;
+    width: 350px;
+}
+
+.input-box {
+    background-color: #2D033B;
+    border: none;
+    color: white;
+    width: 250px;
+    height: 35px;
+    font-size: x-large;
+} 
+
+.password-length {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 350px;
+    font-size: small;
+}
+
+.slider-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.count {
+    background: #2D033B;
+    border: none;
+    height: 30px;
+    width: 30px;
+    font-size: x-large;
+    color: #810CA8;
+    font-weight: 500;
+}
+
+.slider {
+    -webkit-appearance: none;
+    background-color: #810CA8;
+    width: 350px;
+    height: 10px;
+    background: linear-gradient(90deg, rgb(129, 12, 168) 60%, rgb(45, 3, 59) 60%);
+    opacity: 0.7;
+    -webkit-transition: 1s;
+    transition: opacity 1s;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    background: white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.slider-value {
+    color: #810CA8;
+    font-size: 46px;
+    font-weight: 600;
+    margin: 0px;
+}
+
+.logo {
+    align-items: center;
+    justify-content: center;
+}
+
+.checkbox {
+    width: 350px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    font-size: small;
+}
+
+.checkbox label {
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+}
+
+.checks {
+    -webkit-appearance: none;
+    height: 15px;
+    width: 15px;
+    gap: 10px;
+    background: #2D033B;
+    border: 1px solid white;
+    margin-right: 20px;
+}
+
+.checkbox:hover {
+    opacity: 1;
+}
+
+.checks:hover {
+    cursor: pointer;
+}
+
+.checks:checked {
+    background: url('projekt-losenordsgenerator\ 4/images/checkmark.svg');
+    background-color: #810CA8;
+    border: 1px solid #810CA8;
+}
+
+.uppercase {
+    background-color: #810CA8;
+}
+
+.lowercase {
+    background-color: #2D033B;
+}
+.strength {
+    width: 350px;
+    background-color: #810CA8;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: x-small;
+    height: 50px;
+    font-size: medium;
+}
+
+.styrka {
+    color: black;
+    padding: 0px 10px;
+}
+
+.weak-medium-strong {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    gap: 30px;
+    padding: 0px 10px;
+
+}
+
+.staplar {
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
+    align-items: center;
+}
+
+.first {
+    border: white solid 1px;
+    background-color: #ED2B2A;
+    width: 10px;
+    height: 30px;
+}
+
+.second {
+    border: white solid 1px;
+    width: 10px;
+    height: 30px;
+}
+
+.third {
+    border: white solid 1px;
+    width: 10px;
+    height: 30px;
+}
+
+.fourth {
+    border: white solid 1px;
+    width: 10px;
+    height: 30px;
+}
+
+.generate {
+    background-color: #810CA8;
+    width: 350px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    font-family: 'BioRhyme', sans-serif;
+    font-size: large;
+    border: none;
+    cursor: pointer;
+    box-shadow: none;
+}
+
+.generate:hover {
+    transform: scale(1.02);
+}
+
+@media (max-width: 480px) {
+    body {
+        margin: 0px;
+    }
+    .password-box {
+        width: 300px;
+    }
+
+    .wrapper {
+        width: 300px;
+        margin: 10px 20px;
+    }
+
+    .password {
+        font-size: 14px;
+    }
+    .input-box {
+        font-size: 14px;
+    }
+    .count {
+        font-size: 28px;
+    }
+    .checkbox {
+        font-size: 14px;
+        width: 270px;
+        margin: 0 auto;
+    }
+    .slider-container {
+        width: 270px;
+        margin: 0 auto;
+    }
+    .strength {
+        width: 270px;
+        margin: 0 auto;
+        font-size: 14px;
+    }
+    #generate-button {
+        width: 270px;
+        font-size: 14px;
+    }
+    .logo {
+        width: 270px;
+    }
+}

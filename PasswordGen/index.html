@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BioRhyme:wght@200;300;400;700;800&family=Bruno+Ace+SC&family=Dosis:wght@200;300;400;500;600;700;800&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Piazzolla:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="icon" sizes="32x32" href="./assets/images/techover.ico" />
+    <link rel="stylesheet" href="style.css">
+    <title>Lösenords Generator</title>
+  </head>
+  <body>
+    <div class="content">
+      <p>Password Generator</p>
+      <div class="password-box">
+        <div class="password">
+          <input id="password-field" class="input-box" type="text">
+        </div>
+        <span>
+          <img class="copy-icon" id="copy-icon" src="/projekt-losenordsgenerator 4/images/copy-icon.svg" alt="kopiera-icon">
+        </span>      
+      </div>
+      <div class="wrapper">
+          <div class="slider-container">
+            <p>Character length</p>
+            <input class="count" id="length-field" type="text" value="10">
+            <input id="slider" class="slider" type="range" value="10" min="1" max="20">
+          </div>
+          <div class="checkbox">
+                <label><input id="uppercase-checkbox" class="checks" type="checkbox">Include Uppercase Letters</label>
+                <label><input id="lowercase-checkbox" checked class="checks" type="checkbox">Include Lowercase Letters</label>
+              <label><input id="numbers-checkbox" checked class="checks" type="checkbox">Include Numbers</label>
+                <label><input id="symbols-checkbox" class="checks" type="checkbox">Include Symbols</label>
+          </div>  
+          <div class="strength">
+            <div class="styrka">Strength</div>
+            <div class="weak-medium-strong">
+              <p id="strength" class="staplar">Weak</p>
+              <div id="staplar" class="staplar">
+                <div class="first" id="first"></div>
+                <div class="second" id="second"></div>
+                <div class="third" id="third"></div>
+                <div class="fourth" id="fourth"></div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <input id="generate-button" for="generateButton" class="generate" type="button" value="Generate">
+          </div>  
+      </div>
+      <footer><img src="/projekt-losenordsgenerator 4/images/techover-logo.png" alt="Techover Logo" class="logo"/></footer>  
+    </div>
+     </body>
+  <script src="script.js"></script>
+</html>
